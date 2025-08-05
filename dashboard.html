@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚌 Smart Bus Dashboard</h1>
+    <button  class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">🏠 Dashboard</a></li>
+      <li><a href="notification.html">🔔 Notifications</a></li>
+      <li><a href="settings.html">⚙️ Settings</a></li>
+      <li><a href="child-profile.html">👶 Child Profile</a></li>
+      <li><a href="bus-history.html">🕘 Bus History</a></li>
+      <li><a href="emregency.html">🚨 Emergency</a></li>
+      <li><a href="support.html">📞 Support</a></li>
+      <li><a href="bus-details.html">🚌 Bus Details</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="welcome-box">
+      <h2>Welcome, Parent!</h2>
+      <p>Track, monitor, and manage your child’s school transport with real-time updates and notifications.</p>
+    </section>
+
+    <div class="dashboard-grid">
+      <section class="card">
+        <h3>👶 Child Info</h3>
+        <p><strong>Name:</strong> Aryan Kumar</p>
+        <p><strong>Class:</strong> 5th Grade</p>
+        <p><strong>Bus No:</strong> 42</p>
+        <p><strong>Status:</strong> On Board</p>
+      </section>
+
+      <section class="card map-card">
+        <h3>🗺️ Live Bus Location</h3>
+        <div class="map-placeholder">[Map Placeholder]</div>
+      </section>
+
+      <section class="card stats">
+        <h3>📊 Quick Stats</h3>
+        <ul>
+          <li>✅ Attendance: 92%</li>
+          <li>🕓 Last Seen: 7:50 AM</li>
+          <li>📍 Last Location: Near Main Gate</li>
+        </ul>
+      </section>
+
+      <section class="card schedule">
+        <h3>🚌 Upcoming Schedule</h3>
+        <p><strong>Next Pickup:</strong> 2:30 PM</p>
+        <p><strong>Driver:</strong> Mr. Verma</p>
+        <p><strong>Estimated Time:</strong> 15 mins</p>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    function logout() {
+      alert("Logout successful!");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

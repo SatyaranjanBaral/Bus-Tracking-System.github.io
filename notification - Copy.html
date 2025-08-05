@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notification Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="notification-container">
+    <h2>🔔 Notification Settings</h2>
+
+    <p class="intro-text">
+      Customize alerts to stay informed about your child's school bus activity.
+      Choose the notifications you want to receive, and set a quiet period during which you won't be disturbed.
+    </p>
+
+    <div class="toggle-setting">
+      <label for="notif1">✅ Notify when bus leaves school</label>
+      <input type="checkbox" id="notif1">
+    </div>
+
+    <div class="toggle-setting">
+      <label for="notif2">⏳ Notify when bus is 5 minutes away</label>
+      <input type="checkbox" id="notif2">
+    </div>
+
+    <div class="toggle-setting">
+      <label for="notif3">🧒 Notify when child boards/alights</label>
+      <input type="checkbox" id="notif3">
+    </div>
+
+    <div class="time-setting">
+      <label for="dndTime">⏰ Do not disturb after:</label>
+      <input type="time" id="dndTime" value="18:00">
+    </div>
+
+    <button onclick="saveSettings()">💾 Save Preferences</button>
+    <p id="statusMsg"></p>
+
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
